@@ -25,7 +25,7 @@ export default function usersPage({ users }) {
 
 export const getServerSideProps = async (context) => {
 
-    const { data: users } = await axios.get('http://https://eva00-b6vwkfodn-lautarort.vercel.app/api/users')
+    const { data: users } = await axios.get('http://localhost:3000/api/users')
     // console.log(res.data)
 
     return {
