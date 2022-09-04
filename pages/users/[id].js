@@ -39,7 +39,7 @@ function UserView({ user }) {
 
 export const getServerSideProps = async (context) => {
 
-    const { data: user } = await axios.get('http://localhost:3000/api/users/' + context.query.id)
+    const { data: user } = await axios.get('https://eva00-b6vwkfodn-lautarort.vercel.app/api/users/' + context.query.id)
 
     // console.log(res.data)
 
