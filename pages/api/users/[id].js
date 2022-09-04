@@ -41,7 +41,7 @@ const updateUser = async (req, res) => {
     const { id } = req.query
     const { name, email, phone } = req.body
     try {
-        await pool.query('UPDATE client SET name = ?, email = ?, phone = ?  WHERE id= ?', [name, email, phone, id])
+        await pool.query('UPDATE user SET name = ?, email = ?, phone = ?  WHERE id= ?', [name, email, phone, id])
 
         return res.status(204).json()
     } catch (error) {

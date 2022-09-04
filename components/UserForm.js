@@ -34,7 +34,7 @@ export default function UserForm() {
             const res = await axios.post('/api/users', user)
             console.log(res)
         }
-        router.push('/')
+        router.push('/usersPage')
     }
 
 
